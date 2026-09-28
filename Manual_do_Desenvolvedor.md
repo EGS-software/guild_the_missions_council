@@ -5,7 +5,7 @@
 ## 1. Identificação
 **Grupo:** Guilda 4 — O Conselho de Missões
 **Módulo:** Algoritmos de Busca e Ordenação
-**Integrantes:** [Nomes dos Integrantes]
+**Integrantes:** Pedro Schmitt Dalepiane, Tiago Andrei de Almeida Mendonça, Vítor da Silva Bonato, Henrique Oliveski Bombardiéri
 
 ## 2. Introdução e Cenário
 No mundo de Brasilândia, o Conselho de Missões gerencia um quadro de ameaças. Estas ameaças (missões) possuem diferentes atributos, como nível de dificuldade, recompensa em ouro e urgência. O objetivo deste sistema é organizar esse mural de missões e permitir que o conselho localize missões específicas rapidamente por meio de algoritmos de ordenação e busca implementados sem o uso de bibliotecas de ordenação prontas.
@@ -77,3 +77,4 @@ Executando os testes em `laboratorio.py`, os seguintes resultados ilustram o com
   Tanto o Selection Sort quanto o Quick Sort implementados **NÃO** são estáveis. Isso significa que, se duas missões possuírem a exata mesma urgência, a ordem relativa entre elas no vetor original pode ser trocada/embaralhada.
 - **Por que o tempo medido pode variar entre diferentes execuções?**
   O processador executa tarefas em concorrência com o Sistema Operacional e outros programas no computador (escalonamento de threads). Além disso, dependendo do estado do Gerenciador de Memória e L1/L2/L3 Cache, os tempos oscilam, embora a grandeza seja similar. A métrica real de complexidade assintótica são as "comparações matemáticas", não o "relógio de parede".
+
