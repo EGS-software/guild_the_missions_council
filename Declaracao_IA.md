@@ -6,7 +6,7 @@ O grupo deverá informar de maneira transparente e crítica sobre o uso de ferra
 
 **IDENTIFICAÇÃO**
 - **Guilda/Módulo:** Guilda 4 — O Conselho de Missões (Busca e Ordenação)
-- **Integrantes:** [Preencher com o nome dos integrantes do grupo]
+- **Integrantes:** Tiago And
 
 **1. Ferramenta(s) e versão utilizada(s):**
 [Ex: ChatGPT 4.0, Google Gemini Pro, GitHub Copilot]
