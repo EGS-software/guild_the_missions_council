@@ -14,7 +14,8 @@ def carregar_missoes():
         Missao(112, "Encontrar Artefato", 8, 3500, 4),
         Missao(103, "Entregar Mensagem", 1, 30, 1),
         Missao(120, "Infiltracao na Base", 9, 6000, 5),
-        Missao(107, "Proteger Fazenda", 3, 200, 2)
+        Missao(107, "Proteger Fazenda", 3, 200, 2),
+        Missao(102, "Caçar Ursos", 2, 4000, 4)
     ]
 
 def main():
