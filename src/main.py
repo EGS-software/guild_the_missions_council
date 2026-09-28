@@ -63,5 +63,66 @@ def main():
     if pos_err == -1:
         print("Missao 999 nao consta nos registros do Conselho.")
 
+    # 8. EVENTO DO MESTRE (GUILDA 4)
+    print("\n" + "="*40)
+    print("8. EVENTO DO MESTRE (GUILDA 4)")
+    print("="*40)
+    while True:
+        print("\nEscolha uma opcao para o Evento do Mestre:")
+        print("1 - Ordenar um novo conjunto pequeno")
+        print("2 - Buscar um codigo informado")
+        print("3 - Sair")
+        
+        opcao = input("Opcao: ")
+        
+        if opcao == '1':
+            print("\n-- Ordenando um novo conjunto pequeno --")
+            novo_conjunto = [
+                Missao(305, "Resgatar o Gato", 2, 50, 1),
+                Missao(301, "Investigar a Caverna", 6, 400, 3),
+                Missao(303, "Procurar Ingredientes", 4, 150, 2),
+                Missao(302, "Reparar a Ponte", 3, 200, 2),
+                Missao(304, "Mapear o Bosque", 5, 300, 3)
+            ]
+            print("Conjunto original:")
+            for m in novo_conjunto: print(m)
+            
+            print("\nComo deseja ordenar?")
+            print("a - Por codigo")
+            print("b - Por urgencia")
+            sub_op = input("Escolha (a/b): ").strip().lower()
+            
+            atributo = 'codigo' if sub_op == 'a' else 'urgencia'
+            
+            # Utilizando ordenação eficiente para o novo conjunto
+            ordenado, comp, mov = ordenacao_eficiente(novo_conjunto, atributo)
+            print(f"\nConjunto ordenado por {atributo}:")
+            for m in ordenado: print(m)
+            print(f"[Quick Sort] Comparacoes: {comp} | Movimentacoes: {mov}")
+            
+        elif opcao == '2':
+            print("\n-- Buscar um codigo informado --")
+            try:
+                codigo_busca = int(input("Digite o codigo da missao para buscar: "))
+                
+                # A rubrica da guilda 4 pede busca, e na base do projeto busca por codigo
+                # é feita via busca binaria na lista já ordenada por codigo.
+                pos, missao_encontrada = busca_binaria(mural_por_codigo, codigo_busca)
+                
+                if pos != -1:
+                    print(f"=== SUCESSO! ===")
+                    print(f"Missao encontrada no indice {pos}:")
+                    print(missao_encontrada)
+                else:
+                    print(f"Missao com codigo {codigo_busca} nao encontrada nos registros.")
+            except ValueError:
+                print("Por favor, digite um numero valido.")
+                
+        elif opcao == '3':
+            print("Encerrando o Evento do Mestre.")
+            break
+        else:
+            print("Opcao invalida. Tente novamente.")
+
 if __name__ == "__main__":
     main()
