@@ -1,7 +1,5 @@
 # MANUAL DO DESENVOLVEDOR - Guilda 4 (O Conselho de Missões)
 
-*Atenção: Salve este documento como PDF antes de enviar.*
-
 ## 1. Identificação
 **Grupo:** Guilda 4 — O Conselho de Missões
 **Módulo:** Algoritmos de Busca e Ordenação
