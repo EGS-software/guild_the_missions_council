@@ -52,20 +52,20 @@ Este fluxograma ilustra o princípio da divisão e conquista da Busca Binária a
 
 ```mermaid
 graph TD
-    subgraph 1. Primeira Iteração
+    subgraph iter1["1. Primeira Iteração"]
     A1[Cod: 101] --- A2[Cod: 102] --- A3[Cod: 105] --- A4((Meio<br/>Cod: 108)) --- A5[Cod: 110] --- A6[Cod: 112] --- A7[Cod: 120]
     end
     
-    subgraph 2. Segunda Iteração (Descartando a metade esquerda)
+    subgraph iter2["2. Segunda Iteração (Descartando a metade esquerda)"]
     B1((Meio<br/>Cod: 110)) --- B2[Cod: 112] --- B3[Cod: 120]
     end
     
-    subgraph 3. Sucesso
+    subgraph sucesso["3. Sucesso"]
     C1(((Cod: 110 Encontrado!)))
     end
     
-    1. Primeira Iteração -->|Alvo 110 é maior que o Meio 108| 2. Segunda Iteração
-    2. Segunda Iteração -->|Alvo 110 é igual ao Meio| 3. Sucesso
+    iter1 -->|Alvo 110 é maior que o Meio 108| iter2
+    iter2 -->|Alvo 110 é igual ao Meio| sucesso
     
     style A4 fill:#ecc94b,stroke:#b7791f,color:#000
     style B1 fill:#ecc94b,stroke:#b7791f,color:#000
