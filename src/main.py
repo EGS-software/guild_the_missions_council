@@ -21,6 +21,9 @@ def main():
     print("=== O CONSELHO DE MISSOES - BRASILANDIA ===")
     mural = carregar_missoes()
     
+    # GUARDA UMA CÓPIA PURA E DESORDENADA PARA O PASSO 5
+    mural_desordenado_original = copy.deepcopy(mural)
+    
     # 1. Mostrar mural desordenado
     print("\n1. Mural Desordenado Atual:")
     for m in mural: print(m)
@@ -43,9 +46,9 @@ def main():
     mural_atualizado, _, _ = ordenacao_eficiente(mural, 'urgencia')
     for m in mural_atualizado: print(m)
     
-    # 5. Busca linear por código (no vetor que está ordenado por urgência)
-    print("\n5. Busca Linear pelo codigo 110...")
-    pos_lin, obj_lin = busca_linear(mural_atualizado, 110)
+    # 5. Busca linear por código (exatamente no VETOR DESORDENADO, como pede a rubrica)
+    print("\n5. Busca Linear pelo codigo 110 no vetor desordenado...")
+    pos_lin, obj_lin = busca_linear(mural_desordenado_original, 110)
     print(f"Encontrado no indice {pos_lin}: {obj_lin}")
     
     # 6. Ordenar por código e realizar Busca Binária
