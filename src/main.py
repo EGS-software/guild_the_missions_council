@@ -9,7 +9,12 @@ def carregar_missoes():
         Missao(101, "Coletar Ervas", 2, 100, 1),
         Missao(110, "Escolta da Caravana", 5, 800, 3),
         Missao(108, "Decifrar Runas", 7, 2000, 4),
-        Missao(102, "Limpar o Porao", 1, 50, 1)
+        Missao(102, "Limpar o Porao", 1, 50, 1),
+        Missao(115, "Cacar Lobos", 4, 300, 2),
+        Missao(112, "Encontrar Artefato", 8, 3500, 4),
+        Missao(103, "Entregar Mensagem", 1, 30, 1),
+        Missao(120, "Infiltracao na Base", 9, 6000, 5),
+        Missao(107, "Proteger Fazenda", 3, 200, 2)
     ]
 
 def main():

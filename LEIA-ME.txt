@@ -1,0 +1,26 @@
+COMO EXECUTAR O PROJETO (Guilda 4 - O Conselho de Missões)
+===========================================================
+
+Este projeto foi implementado em Python e requer Python 3.6 ou superior instalado no sistema.
+
+ARQUIVOS DO PROJETO:
+--------------------
+- src/main.py: Arquivo principal que executa a demonstração do Desafio Lúdico (Mural do conselho, ordenações, inserção, busca linear e busca binária).
+- src/laboratorio.py: Executa o Laboratório de Comparação de algoritmos (testes com N=100, N=1000 e N=5000).
+- src/missao.py: Contém a estrutura de dados (TAD) da classe Missao.
+- src/ordenacao.py: Contém as implementações dos algoritmos de ordenação (Selection Sort e Quick Sort).
+- src/busca.py: Contém as implementações dos algoritmos de busca (Busca Linear e Busca Binária).
+
+INSTRUÇÕES DE EXECUÇÃO:
+-----------------------
+1. Abra um terminal ou prompt de comando.
+2. Navegue até a pasta raiz do projeto.
+3. Para executar o DESAFIO LÚDICO e ver as principais operações, execute:
+   python src/main.py
+
+4. Para executar o LABORATÓRIO DE COMPARAÇÃO e ver a performance dos algoritmos, execute:
+   python src/laboratorio.py
+
+COMPILAÇÃO:
+-----------
+Como o Python é uma linguagem interpretada, não há etapa de compilação explícita. A execução pelo comando `python` roda diretamente o código fonte.
